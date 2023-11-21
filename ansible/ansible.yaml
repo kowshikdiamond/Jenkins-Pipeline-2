@@ -65,13 +65,13 @@
 
     - name: Pull Docker image
       docker_image:
-        name: "diamond0816/learnings:1.0"
+        name: "diamond0816/learnings:latest"
         source: pull
 
     - name: Run Docker container
       docker_container:
         name: my_container
-        image: "diamond0816/learnings:1.0"
+        image: "diamond0816/learnings:latest"
         ports:
           - "8090:80"
         state: started
