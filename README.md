@@ -1,1 +1,1 @@
-# test
+This project involves a Jenkins pipeline that creates an EC2 instance on AWS. Ansible is configured to retrieve the public IP address from the AWS account, log in to the instance, update the system, and install docker and pull docker image from private docker repository and runs it.
