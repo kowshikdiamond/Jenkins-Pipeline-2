@@ -22,10 +22,6 @@ pipeline {
                 script {
                     // Change to the Terraform directory
                     dir('terraform') {
-                        // Set AWS credentials as environment variables for Terraform
-                        sh "export AWS_ACCESS_KEY_ID='${AWS_ACCESS_KEY_ID}'"
-                        sh "export AWS_SECRET_ACCESS_KEY='${AWS_SECRET_ACCESS_KEY}'"
-
                         // Initialize Terraform
                         sh 'terraform init'
 
